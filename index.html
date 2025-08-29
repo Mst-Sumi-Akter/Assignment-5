@@ -25,8 +25,8 @@
       <h1 class="text-lg font-bold">Emergency Service</h1>
     </div>
     <div class="flex items-center gap-4">
-      <button class="bg-[#41FF6B1A]  text-black px-3 py-1 rounded-full flex gap-2 font-bold items-center"><span >0</span><img src="./assets/heart.png " class="h-5 w-5"  alt=""></button>
-      <button class="bg-[#41FF6B1A]  text-black px-3 py-1 rounded-full flex gap-2 font-bold  items-center "><span >0</span><img src="./assets/coin.png " class="h-5 w-5 "  alt=""></button>
+      <button class="bg-[#41FF6B1A]  text-black px-3 py-1 rounded-full flex gap-2 font-bold items-center"><span id="hartCount" >0</span><img src="./assets/heart.png " class="h-5 w-5"  alt=""></button>
+      <button class="bg-[#41FF6B1A]  text-black px-3 py-1 rounded-full flex gap-2 font-bold  items-center "><span id="coinCount">100</span><img src="./assets/coin.png " class="h-5 w-5 "  alt=""></button>
       <button class="bg-green-500 text-white px-3 py-1 rounded-full flex gap-2 font-bold items-center"> <span>0</span>Copy</button>
     </div>
   </header>
@@ -45,56 +45,56 @@
     <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 flex-1">
       <!-- Emergency Card -->
      
-    <div class="bg-white rounded-2xl shadow p-4 w-90 flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4 w-90 flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="./assets/emergency.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class=" fa-regular fa-heart heartBtn"></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800"> National ID Helpline</h3>
+    <h3 class="  ServiceName font-bold text-gray-800"> National ID Helpline</h3>
     <p class="text-sm text-gray-500"> National ID Helpline</p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">999</p>
+  <p class="  ServiceNumver text-3xl font-bold text-gray-900 mt-6">999</p>
 
   <!-- Tag -->
-  <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-[110px] p-6 "> National</span>
+  <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-[70px] p-6 ">All</span>
 
   <!-- Buttons -->
   <div class="flex gap-4 mt-10">
     <button class="flex-1 border border-gray-300 rounded-lg py-2 text-gray-700 hover:bg-gray-100">
       <i class="fa-solid fa-copy"></i> Copy</button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
 
 
         
-    <div class="bg-white rounded-2xl shadow p-4 w-90 flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4 w-90 flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="https://img.icons8.com/emoji/48/fire-engine.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-heart heartBtn "></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800">Fire Service Number</h3>
+    <h3 class="  ServiceName font-bold text-gray-800">Fire Service Number</h3>
     <p class="text-sm text-gray-500">Fire Service</p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">999</p>
+  <p class="  ServiceNumber text-3xl font-bold text-gray-900 mt-6">999</p>
 
   <!-- Tag -->
   <span class="bg-gray-100 text-gray-600 text-xl  py-2  rounded-full mt-2 w-20 p-6 ">Fire</span>
@@ -105,28 +105,28 @@
       <i class="fa-solid fa-copy"></i> Copy
     </button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
     
-    <div class="bg-white rounded-2xl shadow p-4 w-90 flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4 w-90 flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="./assets/police.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-heart heartBtn"></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800">Police Helpline Number</h3>
+    <h3 class="  ServiceName font-bold text-gray-800">Police Helpline Number</h3>
     <p class="text-sm text-gray-500">Police</p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">999</p>
+  <p class="ServiceNumber text-3xl font-bold text-gray-900 mt-6">999</p>
 
   <!-- Tag -->
   <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-[85px] p-6 ">Police</span>
@@ -137,28 +137,28 @@
       <i class="fa-solid fa-copy"></i> Copy
     </button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
     
-    <div class="bg-white rounded-2xl shadow p-4 w-90 flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4 w-90 flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="./assets/ambulance.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-heart heartBtn"></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800">Ambulence Service</h3>
-    <p class="text-sm text-gray-500">Ambulence Service</p>
+    <h3 class="ServiceName font-bold text-gray-800">Ambulence Service</h3>
+    <p class="text-sm text-gray-500">Ambulence</p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">1994-999999</p>
+  <p class=" ServiceNumber text-3xl font-bold text-gray-900 mt-6">1994-999999</p>
 
   <!-- Tag -->
   <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-[100px] p-6 ">Health</span>
@@ -169,28 +169,28 @@
       <i class="fa-solid fa-copy"></i> Copy
     </button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
     
-    <div class="bg-white rounded-2xl shadow p-4  flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4  flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="./assets/emergency.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-heart heartBtn"></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800">Women & Child Helpline</h3>
+    <h3 class="ServiceName font-bold text-gray-800">Women & Child Helpline</h3>
     <p class="text-sm text-gray-500">Women & Child Helpline</p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">109</p>
+  <p class=" ServiceNumbertext-3xl font-bold text-gray-900 mt-6">109</p>
 
   <!-- Tag -->
   <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-20 p-6 ">Help</span>
@@ -201,28 +201,28 @@
       <i class="fa-solid fa-copy"></i> Copy
     </button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
     
-    <div class="bg-white rounded-2xl shadow p-4  flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4  flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="./assets/emergency.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-heart heartBtn"></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800">Anti-Corruption Helpline </h3>
-    <p class="text-sm text-gray-500">Anti-Corruption Helpline</p>
+    <h3 class=" ServiceName font-bold text-gray-800">Anti-Corruption Helpline </h3>
+    <p class=" text-sm text-gray-500">Anti-Corruption Helpline</p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">106</p>
+  <p class=" ServiceNumber text-3xl font-bold text-gray-900 mt-6">106</p>
 
   <!-- Tag -->
   <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-20 p-6 ">Govt.</span>
@@ -233,28 +233,28 @@
       <i class="fa-solid fa-copy"></i> Copy
     </button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
     
-    <div class="bg-white rounded-2xl shadow p-4  flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4  flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="./assets/emergency.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-heart heartBtn"></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800">Eleectricity Helpline</h3>
-    <p class="text-sm text-gray-500">Eleectricity Helpline</p>
+    <h3 class=" ServiceName font-bold text-gray-800">Eleectricity Helpline</h3>
+    <p class="text-sm text-gray-500">Electricity Outage</p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">16216</p>
+  <p class=" ServiceNumber text-3xl font-bold text-gray-900 mt-6">16216</p>
 
   <!-- Tag -->
   <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-[109px] p-6 ">Electricity</span>
@@ -265,28 +265,28 @@
       <i class="fa-solid fa-copy"></i> Copy
     </button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
     
-    <div class="bg-white rounded-2xl shadow p-4  flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4  flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="./assets/emergency.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-heart heartBtn"></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800">Brac Helpline</h3>
+    <h3 class=" ServiceName font-bold text-gray-800">Brac Helpline</h3>
     <p class="text-sm text-gray-500">Brac </p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">16445</p>
+  <p class="ServiceNumber text-3xl font-bold text-gray-900 mt-6">16445</p>
 
   <!-- Tag -->
   <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-20 p-6 ">NGO</span>
@@ -297,28 +297,28 @@
       <i class="fa-solid fa-copy"></i> Copy
     </button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
     
-    <div class="bg-white rounded-2xl shadow p-4  flex flex-col">
+    <div class="card bg-white rounded-2xl shadow p-4  flex flex-col">
   <!-- Top row -->
   <div class="flex justify-between items-start ">
     <img src="./assets/emergency.png" alt="icon" class="w-10 h-10">
     <button class="text-gray-400 hover:text-red-500">
-      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-heart heartBtn"></i>
     </button>
   </div>
 
   <!-- Title + Subtitle -->
   <div class="mt-2">
-    <h3 class="font-bold text-gray-800">Bangladesh-Railway Helpline</h3>
-    <p class="text-sm text-gray-500">Bangladesh-Railway Helpline</p>
+    <h3 class=" ServiceName font-bold text-gray-800">Bangladesh Railway Helpline</h3>
+    <p class="text-sm text-gray-500">Bangladesh Railway</p>
   </div>
 
   <!-- Emergency Number -->
-  <p class="text-3xl font-bold text-gray-900 mt-6">163</p>
+  <p class=" ServiceNumber text-3xl font-bold text-gray-900 mt-6">163</p>
 
   <!-- Tag -->
   <span class="bg-gray-100 text-gray-600 text-2  py-2  rounded-full mt-2 w-[90px] p-6 ">Travel</span>
@@ -329,7 +329,7 @@
       <i class="fa-solid fa-copy"></i> Copy
     </button>
     <button class="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2">
-      <i class="fa-solid fa-phone"></i>Call
+      <i class="fa-solid fa-phone callBtn"></i>Call
     </button>
   </div>
   </div>
@@ -342,7 +342,9 @@
       <div class="flex justify-between items-center mb-3">
       <button class="text-lg font-bold ">
       <i class="fa-regular fa-clock"></i> Call History</button>
-      <button class="bg-green-500 text-white px-3 py-1 rounded-full font-bold">Clear</button>
+      <ul id="callHistory"></ul>
+      
+      <button id="clearHistory" class="bg-green-500 text-white px-3 py-1 rounded-full font-bold">Clear</button>
 </div>
 
       </div>
