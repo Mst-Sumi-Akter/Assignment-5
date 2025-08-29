@@ -52,5 +52,15 @@ document.querySelectorAll('.copyBtn').forEach(btn => {
     const number = card.querySelector('.serviceNumber').textContent;
     navigator.clipboard.writeText(number);
     alert(`Copied: ${number}`);
+    
+
   });
+});
+let copyCount = 0;
+const copyCountEl = document.getElementById('copyCount');
+document.querySelectorAll('.copyBtn').forEach(btn =>{
+    btn.addEventListener('click',() =>{
+        copyCount++;
+        copyCountEl.textContent = copyCount
+    });
 });
